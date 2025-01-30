@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
-            <img src="logo.png" alt="WP Pusher Logo">
-            <h1>WP Pusher</h1>
+            <img src="./logo/wppusher-logo copy.png" alt="WP Pusher Logo">
         </div>
         <nav class="navigation">
             <a href="#">Download</a>
@@ -20,58 +21,83 @@
             <button class="account-btn">Account</button>
         </nav>
     </header>
+
     <main class="main-container">
         <section class="checkout-form">
             <h2>Checkout</h2>
             <div class="form-section">
                 <h3><span>1</span> Your Basic Information</h3>
-                <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="Jane">
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Doe">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Jane">
+                    </div>
+                    <div class="form-group last-name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Doe">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" placeholder="janedoe@example.com">
                 </div>
             </div>
+
             <div class="form-section">
                 <h3><span>2</span> Your Payment Information</h3>
                 <div class="form-group">
                     <label for="credit-card">Credit Card</label>
-                    <input type="text" id="credit-card" placeholder="Card Number">
-                </div>
-                <div class="form-group-group">
-                    <input type="text" placeholder="MM / YY">
-                    <input type="text" placeholder="CVC">
+                    <input type="text" id="credit-card" placeholder="Card Number   |   CVV   |   MM/YY">
                 </div>
             </div>
-            <button class="btn-primary">Buy WP Pusher</button>
-            <p class="help-text">Need any help? Don’t hesitate to <a href="#">contact</a> support!</p>
+
+            <div class="cta-section">
+                <button class="btn-primary">Buy WP Pusher</button>
+                <p class="help-text"><span class="icon">?</span> Need help? <a href="#" >Don't hesitate to <br>Contact support</a>!</p>
+            </div>
         </section>
+
         <aside class="sidebar">
-            <h3>Freelancer</h3>
-            <p class="price">$99 <span>/ year</span></p>
-            <p>Automatically renews after 1 year</p>
-            <ul>
-                <li>Use on 5 client sites</li>
-                <li>Private repositories</li>
-                <li>Email support</li>
-            </ul>
-            <p>Need 20 client sites? <a href="#">Switch to the Agency plan</a>.</p>
-            <blockquote>
-                <p>FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!</p>
-                <footer>
-                    <cite>Kirk Beard</cite>
-                </footer>
-            </blockquote>
+            <div class="sidebar-content">
+                <div class="sidebar-content-header">
+                    <h3>Freelancer</h3>
+                    <p class="price">$99 <span>/ year</span></p>
+                    <p>Automatically renews after 1 year</p>
+                </div>
+                <div class="sidebar-content-list">
+                    <ul>
+                        <li><span class="icon"><img src="./logo/Combined Shape Copy 2.png" alt="check-icon"></span>Use
+                            on 5
+                            client sites</li>
+                        <li><span class="icon"><img src="./logo/Combined Shape Copy 2.png" alt="check-icon"></span>
+                            Private
+                            repositories</li>
+                        <li><span class="icon"><img src="./logo/Combined Shape Copy 2.png" alt="check-icon"></span>
+                            Email
+                            support</li>
+                    </ul>
+                </div>
+                <div class="sidebar-content-cta">
+                    <p>Need 20 client sites? <a href="#" class="link">Switch to the Agency plan</a>.</p>
+                </div>
+                <hr> <!-- Line separator added -->
+                <div class="sidebar-content-footer">
+                    <blockquote>
+                        <p>FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is
+                            awesome!
+                        </p>
+                        <footer>
+                            <cite><span class="profile-icon">🖼️</span> Kirk Beard</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
         </aside>
     </main>
+
     <footer class="footer">
         <p>© 2018 WP Pusher IVS · <a href="#">Terms of Service</a></p>
     </footer>
 </body>
+
 </html>
